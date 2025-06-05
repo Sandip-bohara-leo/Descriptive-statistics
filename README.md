@@ -25,7 +25,7 @@ write_xlsx(stat.desc(WHEAT), "wheat table.xlsx")
 
 # Analysis and result
  # 1. Basic descriptive summary (mean, median, min, max, etc.)
-> summary(KHEM_DATA)
+> summary(WHEAT)
  Accession name          DTE             DTH             DTF             DOM       
  Length:116         Min.   :14.00   Min.   : 99.0   Min.   :102.0   Min.   :132.0  
  Class :character   1st Qu.:15.00   1st Qu.:104.0   1st Qu.:110.0   1st Qu.:140.0  
@@ -57,7 +57,7 @@ write_xlsx(stat.desc(WHEAT), "wheat table.xlsx")
 > # 2. Load the 'pastecs' package which provides advanced descriptive statistics
 > library(pastecs)
 > # 3. Compute descriptive statistics: mean, standard deviation, skewness, kurtosis, etc.
-> stat.desc(KHEM_DATA)
+> stat.desc(WHEAT)
          Accession name          DTE            DTH            DTF            DOM
 nbr.val              NA  116.0000000   116.00000000   116.00000000   116.00000000
 nbr.null             NA    0.0000000     0.00000000     0.00000000     0.00000000
@@ -120,10 +120,13 @@ std.dev     7.8330224   0.47077715
 coef.var    0.2151185   0.33065781
 > # 4. Prevent R from displaying scientific notation (e.g., 1.0e+05 becomes 100000)
 > options(scipen = 999)
+> 
 > # 5. Load 'writexl' package to export the result to an Excel file
 > library(writexl)
+> 
 > # 6. Write the output of stat.desc() into an Excel file named "wheat table.xlsx"
-> write_xlsx(stat.desc(KHEM_DATA), "wheat table.xlsx")
+> write_xlsx(stat.desc(WHEAT), "wheat table.xlsx")
+> 
 > # 7. know the directory of of stat.desc() into an Excel file named "wheat table.xlsx"
 > getwd()
 [1] "C:/Users/Pc/OneDrive/Documents"
