@@ -1,2 +1,4 @@
 # Descriptive-statistics
-This repository contains an R script for performing descriptive statistical analysis on a dataset named WHEAT, which includes agro-morphological traits of wheat genotypes. The analysis covers both basic statistics (mean, median, minimum, maximum) and extended statistics (standard deviation, variance, skewness, kurtosis) using the pastecs package.
+This repository contains an R script for performing descriptive statistical analysis on a dataset named WHEAT, which includes agro-morphological traits of wheat genotypes. The analysis covers both basic statistics (mean, median, minimum, maximum) and extended statistics (standard deviation, variance, skewness, kurtosis) using the pastecs package.The script is structured step-by-step, making it easy to follow and modify. Additionally, the results are exported to an Excel file using the writexl package for convenient sharing and reporting.
+
+This project is useful for researchers, students, and data analysts working with crop datasets who want to understand trait variation and distribution within their data. It emphasizes reproducibility, clarity, and simplicity in statistical reporting.
